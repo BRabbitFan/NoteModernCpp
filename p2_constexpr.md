@@ -31,7 +31,7 @@ constexpr int Constexpr_Number = 128;
 
 ```cpp
 // renderer project
-namespace emeet::media {  // C++17 新语法 : 嵌套命名空间
+namespace emeet::media {  // C++17 新语法 : 嵌套命名空间缩写
 #define MAX_RENDERER_NUMBER 64
 }
 // main project
