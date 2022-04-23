@@ -31,17 +31,17 @@ constexpr int Constexpr_Number = 128;
 
 ```cpp
 // renderer project
-namespace emeet::media {  // C++17 新语法 : 嵌套命名空间缩写
+namespace brabbit::media {  // C++17 新语法 : 嵌套命名空间缩写
 #define MAX_RENDERER_NUMBER 64
 }
 // main project
-namespace emeet {
+namespace brabbit {
 //const int MAX_RENDERER_NUMBER = 128;  // error   : const int 64 = 128
 #define MAX_RENDERER_NUMBER 128         // warning : 宏重定义. 这可能会破坏 media 的配置
 }
 ```
 
-即便这个同名常量在两个语境下可能表达的具体含义是不一样的, emeet::media 中的宏依然会污染到主要工程. 这种情况下使用 `const` 定义常量可能会与宏的命名冲突, 当然这还只是小问题, 改一个名字就好了. 但如果我们定义了同名的宏, 则可能会在运行期影响 emeet::media 的配置.
+即便这个同名常量在两个语境下可能表达的具体含义是不一样的, brabbit::media 中的宏依然会污染到主要工程. 这种情况下使用 `const` 定义常量可能会与宏的命名冲突, 当然这还只是小问题, 改一个名字就好了. 但如果我们定义了同名的宏, 则可能会在运行期影响 brabbit::media 的配置.
 
 又如微软的经典历史遗留问题 : 
 
@@ -74,11 +74,11 @@ _Type limit(const _Type& min_val, const _Type& val, const _Type& max_val) {
 
 ```cpp
 // renderer project
-namespace emeet::media {
+namespace brabbit::media {
 constexpr int Max_Render_Number = 64;
 }
 // main project
-namespace emeet {
+namespace brabbit {
 constexpr int Max_Render_Number = 128;
 }
 ```

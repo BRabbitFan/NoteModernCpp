@@ -62,7 +62,7 @@ namespace System {
     }
   }
 }
-namespace Emeet {
+namespace Brabbit {
   public class Accout : System.Object {
     public override string ToString() {  // 特殊版本
       ......
@@ -88,19 +88,19 @@ namespace std {
     ......
   }
 }
-namespace emeet {
+namespace brabbit {
   class Account {
     ......
   }
 }
 template<>  // 特殊版本
-inline void std::to_string<emeet::Account>(emeet::Account account) {
+inline void std::to_string<brabbit::Account>(brabbit::Account account) {
   ......
 }
 // 多态
 int main(int argc, char* argv[]) {
-  std::to_string(int());             // std::to_string<int>(int());
-  std::to_string(emeet::Account());  // std::to_string<emeet::Account>(emeet::Account());
+  std::to_string(int());               // std::to_string<int>(int());
+  std::to_string(brabbit::Account());  // std::to_string<brabbit::Account>(brabbit::Account());
   return 0;
 }
 ```
