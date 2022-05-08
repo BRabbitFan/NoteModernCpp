@@ -38,7 +38,7 @@ C++ 正式标的迭代准遵循着以下两个特点 :
 
 - 编译期强化
     - [`constexpr` : 真正的 "常量"](p2_constexpr.md)
-    - [`auto`, `decltype` : 类型推导](p3_auto_deltype.md)
+    - [`auto` 与 `decltype` : 类型推导](p3_auto_deltype.md)
     - [GP 泛型编程的强化 : 可变长参数模板与折叠表达式](p4_variadic_templates.md)
     - [GP 泛型编程的强化 : 外部模板与非类型模板参数](p5_external_template.md)
     - [GP 泛型编程的强化 : `concept` 与 `requires` : 泛型约束](p6_concept_requires.md)
