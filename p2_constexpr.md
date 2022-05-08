@@ -25,7 +25,7 @@ constexpr int Constexpr_Number = 128;
 
 ---
 
-### 使用 `constexpr` 避免宏定义的污染性  
+## 使用 `constexpr` 避免宏定义的污染性  
 
 预处理语句无视代码块的访问限制, 这将污染代码, 并可能在难以预见的地方留下隐患. 现假设如下情况 : 两个进行联合编译的工程内均使用了一个常量 : 当前平台渲染器的最大数量. 代码如下:  
 
@@ -85,7 +85,7 @@ constexpr int Max_Render_Number = 128;
 
 ---
 
-### 使用 `constexpr` 避免 `const` 的双重含义 : "常量" 与 "只读变量"  
+## 使用 `constexpr` 避免 `const` 的双重含义 : "常量" 与 "只读变量"  
 
 定义常量的目的 : 在编译期就确定值, 从而达成运行期零开销  
 
@@ -142,7 +142,7 @@ constexpr int Constexpr_Number = 128;        // ok    : 常量, 在编译期确�
 
 ---
 
-### 使用 `constexpr` 修饰函数与分支  
+## 使用 `constexpr` 修饰函数与分支  
 
 `constexpr` 关键字除了可以对变量进行修饰外, 还可以对函数与分支语句进行修饰.  
 
@@ -255,7 +255,7 @@ https://blog.csdn.net/xtlisk/article/details/51249371
 
 ---
 
-### `constexpr` 的演化  
+## `constexpr` 的演化  
 
 `constexpr` 一开始只是为了修复 `const` 拥有双重含义这个历史遗留问题. 但随着后续的逐步发展, 它已成为现代 C++ 的重要关键字. 以下是 `constexpr` 的发展历程简述 :  
 
